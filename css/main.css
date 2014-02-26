@@ -1,0 +1,23 @@
+#mainNav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background-color: #f07054;
+  padding: 10px 100px;
+  line-height: 50px; }
+  #mainNav #logo {
+    width: 200px;
+    text-align: center;
+    background: url("../img/logo.png") no-repeat;
+    background-size: 50px;
+    float: left;
+    font-weight: bold;
+    color: white; }
+  #mainNav ul {
+    float: right; }
+    #mainNav ul li {
+      float: left;
+      margin-right: 30px;
+      font-weight: bold;
+      color: white; }
