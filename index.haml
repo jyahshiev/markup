@@ -1,0 +1,283 @@
+!!! 5
+-# paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+<!--[if lt IE 7]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if gt IE 8]><!-->
+%html.no-js{ :lang => "en" }
+  <!--<![endif]-->
+  %head
+    %meta{ :charset => "utf-8" }/
+    
+    -# Always force latest IE rendering engine (even in intranet) & Chrome Frame
+    -# Remove this if you use the .htaccess
+    %meta{ "http-equiv" => "X-UA-Compatible", :content => "IE=edge,chrome=1" }/
+    
+    %title Prov Min Hybrid
+    %meta{ :name => "Description", :content => "Prov Min Hybrid" }/
+    %meta{ :name => "", :content => "" }/
+    %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1.0" }/
+    %link{ :href => "css/normalize.css", :media => "all", :rel => "stylesheet" }/
+    %link{ :href => "css/main.css", :media => "all", :rel => "stylesheet" }/
+
+    %script{ :src => "js/vendor/modernizr-2.6.6.min.js" }
+    %script{ :src => "js/vendor/jquery-1.10.2.min.js" }
+    %script{ :src => "js/main.js" }
+
+  %body
+    #mainWrap
+      %header
+        %nav#mainNav
+          %ul#socialShare
+            %li
+              %a(href="#")
+                %img(src="img/icon_pin.png" )
+            %li
+              %a(href="#")
+                %img(src="img/icon_twitter.png" )
+            %li
+              %a(href="#")
+                %img(src="img/icon_facebook.png" )
+          #searchBox
+            %form
+              %input(type="text" placeholder="Input your search text here" )
+
+          #loginBox
+            %a(href="#" )
+              %p Log In
+
+      %section#innerWrap
+        #top
+          #showBox
+            .circleLayer1(style="top:190px; left:192px" )
+              .circleHolder
+                .cell
+                  %p Norge
+                .cell
+                  %p 355
+
+            .circleLayer2(style="top:90px; left:265px" )
+              .circleHolder2
+                .cell
+                  %p Buskerud
+                .cell
+                  %p 24
+
+            .circleLayer2(style="top:435px; left:265px" )
+              .circleHolder2
+                .cell
+                  %p Buskerud
+                .cell
+                  %p 24
+            .circleLayer2(style="top:118px; left:170px" )
+              .circleHolder2
+                .cell
+                  %p Buskerud
+                .cell
+                  %p 24
+            .circleLayer2(style="top:118px; left:360px" )
+              .circleHolder2
+                .cell
+                  %p Buskerud
+                .cell
+                  %p 24
+            .circleLayer2(style="top:407px; left:170px" )
+              .circleHolder2
+                .cell
+                  %p Buskerud
+                .cell
+                  %p 24
+            .circleLayer2(style="top:407px; left:360px" )
+              .circleHolder2
+                .cell
+                  %p Buskerud
+                .cell
+                  %p 24
+            .circleLayer2(style="top:198px; left:105px" )
+              .circleHolder2
+                .cell
+                  %p Buskerud
+                .cell
+                  %p 24
+            .circleLayer2(style="top:198px; left:425px" )
+              .circleHolder2
+                .cell
+                  %p Buskerud
+                .cell
+                  %p 24
+            .circleLayer2(style="top:318px; left:105px" )
+              .circleHolder2
+                .cell
+                  %p Buskerud
+                .cell
+                  %p 24
+            .circleLayer2(style="top:318px; left:425px" )
+              .circleHolder2
+                .cell
+                  %p Buskerud
+                .cell
+                  %p 24
+
+            .circleLayer3(style="top:48px; left:345px" )
+              .circleHolder3
+                .cell
+                  %p Telemark
+                .cell
+                  %p 11
+
+            .circleLayer3(style="top:48px; left:210px" )
+              .circleHolder3
+                .cell
+                  %p Telemark
+                .cell
+                  %p 11
+            .circleLayer3(style="top:500px; left:210px" )
+              .circleHolder3
+                .cell
+                  %p Telemark
+                .cell
+                  %p 11
+            .circleLayer3(style="top:500px; left:345px" )
+              .circleHolder3
+                .cell
+                  %p Telemark
+                .cell
+                  %p 11
+            .circleLayer3(style="top:415px; left:95px" )
+              .circleHolder3
+                .cell
+                  %p Telemark
+                .cell
+                  %p 11
+            .circleLayer3(style="top:415px; left:460px" )
+              .circleHolder3
+                .cell
+                  %p Telemark
+                .cell
+                  %p 11
+            .circleLayer3(style="top:125px; left:95px" )
+              .circleHolder3
+                .cell
+                  %p Telemark
+                .cell
+                  %p 11
+            .circleLayer3(style="top:125px; left:460px" )
+              .circleHolder3
+                .cell
+                  %p Telemark
+                .cell
+                  %p 11
+            .circleLayer3(style="top:270px; left:50px" )
+              .circleHolder3
+                .cell
+                  %p Telemark
+                .cell
+                  %p 11
+            .circleLayer3(style="top:270px; left:505px" )
+              .circleHolder3
+                .cell
+                  %p Telemark
+                .cell
+                  %p 11
+          #carShow
+            .slider#previous
+              %img(src="img/car_aurish.png" )
+            .slider#current
+              %img(src="img/car_aurists.png" )
+            .slider#next
+              %img(src="img/car_prius.png" )
+        #middleContainer
+          #carInfo
+            .triangleBlue
+            #carInfoIntro
+              %h1 Auris Hybrid
+              %h2 Kvalitet i smarte løsninger
+              %p Auris Hybrid byr i på alt det som har gjort Toyotas hybridteknologi anerkjent og populær.<br/> Stillegående, lettkjørt og usedvanlig drivstofføkonomisk.
+              .button#sendButton
+                %a(href="#" ) Finn en Auris Hybrid
+              .button#moreButton
+                %a(href="#" ) Les mer
+            %img(src="img/videoImage.png" )
+            .columns
+
+              .notePads
+                %img(src="img/pmh-video-preview-lise.jpg" )
+              .notePads.notes
+                %h4 Har hatt hybrid tidligere og ser ingen grunn til å gå bort fra det. Lettkjørt, billig i drift og komfortabel.
+                %p Jan Aarstad, Grorud, Oslo
+              .notePads
+                %img(src="img/pmh-video-preview-gro.jpg" )
+            .columns
+              .notePads.notes
+                %h4 Hybriden vår er så stille at det er en nytelse å sitte i kø.
+                %p André Stenseth, Lier
+              .notePads
+                %img(src="img/pmh-video-preview-andre.jpg" )
+              .notePads.notes
+                %h4 Beste bilen jeg har hatt.
+                %p Hilde Fjeldsgaard, Mandal, <br />Vest-Agder
+              .notePads
+                %img(src="img/pmh-video-preview-thomas.jpg" )
+            .columns
+              .notePads
+                %img(src="img/provmin.jpg" )
+              .notePads
+                %img(src="img/pmh-video-preview-miljoe.jpg" )
+              .notePads.notes
+                %p "En ekstremt enkel bil a kjore"
+                %p side3.no
+              .notePads.notes
+                %p Test av Toyota Auris: En klassereise
+                %p vg.no
+            .clearfix
+        #bottomContainer
+          #bottomTextHolder
+            %h3 Mange vet at Hybridteknologi står for bedre byluft og mindre lokal forurensing, men visste du også at de også er et smart økonomisk valg? Her er ti ting du bør vite om hybridbiler.
+            %h5 På vei mot nullutslipp
+            %p Toyota har en 360 graders tilnærming til utslipp og <br/>miljøproblemer, vi vil nemlig være med på løsningen. <br/>Hybridteknologi er et av de største skrittene Toyota tar på vei<br/> mot nullutslipp.
+            %h5 Bedre byluft
+            %p Toyotas hybrider har ca. 30 ganger lavere NOx utslipp enn en dieselbil, som <br/>skaper mindre svevestøv og renere byluft.
+            %h5 Stille kjøring
+            %p Støy er også en form for forurensing. Når man kjører med kun den elektriske <br/>motoren er bilen svært stillegående.
+            %h5 Utslippsfritt
+            %p De fleste turer vi kjører i Norge er faktisk veldig korte og som<br/> oftest innenfor tettbygde strøk. Derfor er, normalt sett, 20-50%<br/> av en kjøreturer uten bensinmotoren.
+            %h5.indentRight(style="margin-top:200px" ) To motorer jobber sammen.
+            %p.indentRight Toyota hybrid kombinerer sømløst flere <br/>energikilder: En effektiv bensinmotor og en<br/> elektrisk motor med generator og batteripakke.<br/> Dette vil si at bilene kan kjøre på bensinmotor<br/> alene, elektrisk motor alene, eller med en <br/>kombinasjon av begge.
+            %h5.indentMiddle Automatikk
+            %p.indentMiddle Motoren velger automatisk hvor energien kommer fra, så <br/>dette trenger du ikke tenke på under kjøring.
+            %h5.indentRight Automatgir
+            %p.indentRight Automatgir er standard på alle Toyotas<br/> hybrider.
+            %h5(style="margin-top:200px" ) Lader batteriet under kjøring
+            %p Batteriet blir ladet under lett kjøring og ved bremsing. Bilen<br/> sparer lagret energi til akselerasjon og bakkekjøring.
+            %h5 Bekymringsfritt bilhold
+            %p Toyotas hybrideiere er Toyotas mest fornøyde kunder. Dette kan komme av at <br/>våre hybrider sparer både miljøet og lommeboka, at de er lettkjørte, kommer <br/>med automatgir som standard og har batterier som varer hele bilens levetid.
+            %h5 Sparer lommeboka
+            %p Med en hybrid fra Toyota får du lave vedlikeholdskostnader<br/> over tid. Hybrid er det mest driftssikre teknologien Toyota<br/> lager, ettersom flere motorer jobber sammen og skaper <br/>mindre slitasje.
+          .clearfix(style="margin-top:137px" )
+        #whiteButtonContainer
+          .button#whiteButton
+            %a(href="#" ) Laer mere om hybrid pa toyota.no
+
+        %footer
+          %nav
+            %ul
+              %li Copyright © 2014 Toyota Norge & Saatch&Saatchi I
+              %li
+                %a(href="#" ) Kampanjeregler, vilkår og personvern
+    -#
+      Javascript at the bottom for fast page loading
+      Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary
+    %script{ :src => "//ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.js" }
+    :javascript
+      window.jQuery || document.write("<script src='js/jquery.min.js'>\x3C/script>")
+    
+    %script{ :src => "js/plugins.js?v=1" }
+    %script{ :src => "js/script.js?v=1" }
+    
+    -#  asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet
+    -#  change the UA-XXXXX-X to be your site's ID
+    :javascript
+      var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"],["_trackPageLoadTime"]];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+      g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+      s.parentNode.insertBefore(g,s)}(document,"script"));
