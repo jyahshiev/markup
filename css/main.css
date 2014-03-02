@@ -1,5 +1,9 @@
+.backcolor {
+  background-color: #e74c3c; }
+
 body {
-  font-family: calibri, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: calibri, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.1em; }
 
 a {
   color: white;
@@ -7,6 +11,7 @@ a {
 
 #mainNav {
   position: fixed;
+  z-index: 1;
   left: 0;
   right: 0;
   height: 80px;
@@ -38,7 +43,7 @@ a {
         #mainNav ul li a:visited {
           border-bottom: 2px solid white; }
 
-#introC {
+#introBin {
   height: 200px;
   background-color: #e74c3c;
   padding-top: 100px; }
@@ -48,7 +53,7 @@ a {
   margin: 0 auto;
   text-align: center;
   color: white;
-  font-family: Basic Title font, Gafata, sans-serif; }
+  font-family: Basic Title font, sans-serif; }
   #intro hr {
     border: 1px solid white; }
   #intro p {
@@ -64,6 +69,148 @@ a {
 .decor {
   background-color: #e74c3c; }
 
-.trimHR {
+.trimHR, .featureIntro hr, #LWorkIntro hr {
   width: 150px;
   margin: 20px auto; }
+
+#featuresBin {
+  width: 90%;
+  margin: 0 auto; }
+
+.featureIntro, #LWorkIntro {
+  width: 800px;
+  margin: 0 auto 50px;
+  text-align: center; }
+  .featureIntro hr, #LWorkIntro hr {
+    border: 1px solid #e74c3c; }
+  .featureIntro h1, #LWorkIntro h1 {
+    font-family: Basic Title font, sans-serif; }
+
+.featureList {
+  position: relative;
+  float: left;
+  text-align: center;
+  width: 250px;
+  margin-right: 50px;
+  font-weight: lighter; }
+  .featureList img {
+    width: 150px; }
+  .featureList a {
+    color: #e74c3c; }
+
+.circle {
+  margin-left: 50px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #e74c3c; }
+
+.flatShadow {
+  width: 198px;
+  height: 198px;
+  background: url("../img/flat-shadow.png") no-repeat scroll 0 0/100% rgba(0, 0, 0, 0);
+  position: absolute;
+  left: 26px;
+  top: 70px;
+  z-index: -1; }
+
+#LWorkBinHD {
+  background-color: #e74c3c;
+  padding-top: 50px; }
+
+#LWorkBin {
+  width: 90%;
+  margin: 0 auto; }
+
+#LWorkIntro {
+  color: white; }
+  #LWorkIntro hr {
+    border: 1px solid white; }
+
+.paneNav {
+  text-align: center;
+  height: 30px;
+  font-weight: bold;
+  width: 360px;
+  margin: 0 auto;
+  clear: both; }
+  .paneNav li {
+    float: left;
+    list-style: none;
+    margin-right: 40px; }
+
+#LWorkListBin {
+  width: 90%;
+  margin: 0 auto; }
+
+.LWorkList {
+  background-color: white;
+  position: relative;
+  width: 350px;
+  height: 350px;
+  float: left;
+  color: transparent; }
+  .LWorkList a {
+    color: transparent; }
+  .LWorkList:hover {
+    color: white; }
+    .LWorkList:hover a {
+      color: white; }
+
+.LWorkListContent {
+  position: absolute;
+  z-index: 3;
+  height: 150px;
+  width: 200px;
+  margin: 50px 0 50px -30px;
+  padding-top: 20px;
+  text-align: center; }
+  .LWorkListContent h5 {
+    margin: 0; }
+  .LWorkListContent p {
+    font-size: 0.9em; }
+
+.hex:before {
+  margin-left: -70px;
+  content: " ";
+  width: 0;
+  height: 0;
+  border-bottom: 120px solid #e74c3c;
+  border-top: 120px solid #e74c3c;
+  border-right: 70px solid transparent;
+  position: absolute; }
+  .hex:before:hover {
+    border-bottom: 30px solid white; }
+
+.hex {
+  width: 150px;
+  height: 240px;
+  transition: background-color 0.5s ease;
+  background-color: transparent;
+  position: relative;
+  border-right: 70px solid transparent;
+  border-left: 70px solid transparent;
+  z-index: 2; }
+  .hex:hover {
+    background-color: rgba(0, 0, 0, 0.9); }
+
+.hexagon {
+  width: 290px;
+  height: 240px;
+  position: absolute;
+  z-index: 1; }
+
+.hex:after {
+  margin-left: 150px;
+  content: " ";
+  width: 0;
+  height: 0;
+  border-bottom: 120px solid #e74c3c;
+  border-top: 120px solid #e74c3c;
+  border-left: 70px solid transparent;
+  position: absolute; }
+
+.clearfix {
+  content: ".";
+  visibility: hidden;
+  clear: both; }
