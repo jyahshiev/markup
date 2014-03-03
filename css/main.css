@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "heydings_iconsregular";
+  src: url("fonts/heydings_icons-webfont.eot");
+  src: url("fonts/heydings_icons-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/heydings_icons-webfont.woff") format("woff"), url("fonts/heydings_icons-webfont.ttf") format("truetype"), url("fonts/heydings_icons-webfont.svg#heydings_iconsregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 .backcolor {
   background-color: #e74c3c; }
 
@@ -11,7 +18,7 @@ a {
 
 #mainNav {
   position: fixed;
-  z-index: 1;
+  z-index: 100;
   left: 0;
   right: 0;
   height: 80px;
@@ -86,24 +93,31 @@ a {
   .featureIntro h1, #LWorkIntro h1 {
     font-family: Basic Title font, sans-serif; }
 
-.featureList {
+.featureList, .meetTeam, .clientsSaid {
   position: relative;
   float: left;
   text-align: center;
   width: 250px;
   margin-right: 50px;
   font-weight: lighter; }
-  .featureList img {
+  .featureList img, .meetTeam img, .clientsSaid img {
+    transition: all 0.5s ease;
+    position: absolute;
+    left: -1px;
+    top: 0;
     width: 150px; }
-  .featureList a {
+  .featureList a, .meetTeam a, .clientsSaid a {
     color: #e74c3c; }
 
 .circle {
+  position: relative;
   margin-left: 50px;
   width: 150px;
   height: 150px;
   border-radius: 50%;
   background-color: #e74c3c; }
+  .circle:hover img {
+    top: -40px; }
 
 .flatShadow {
   width: 198px;
@@ -127,14 +141,14 @@ a {
   #LWorkIntro hr {
     border: 1px solid white; }
 
-.paneNav {
+.LWorkNav {
   text-align: center;
   height: 30px;
   font-weight: bold;
   width: 360px;
-  margin: 0 auto;
+  margin: 0 auto 20px;
   clear: both; }
-  .paneNav li {
+  .LWorkNav li {
     float: left;
     list-style: none;
     margin-right: 40px; }
@@ -144,18 +158,42 @@ a {
   margin: 0 auto; }
 
 .LWorkList {
-  background-color: white;
+  overflow: visible;
+  margin: 0 auto;
+  background: url("../img/flat-shadow.png") no-repeat scroll 0 120px;
+  background-size: 380px 180px;
+  width: 400px;
+  height: 300px;
+  float: left; }
+
+.portfolio {
+  width: 240px;
+  margin-left: 45px;
   position: relative;
-  width: 350px;
-  height: 350px;
-  float: left;
-  color: transparent; }
-  .LWorkList a {
+  color: transparent;
+  transition: all 0.5s ease; }
+  .portfolio .linker {
+    transition: all 0.5s ease;
+    position: absolute;
+    right: 20px; }
+  .portfolio .magnifier {
+    transition: all 0.5s ease;
+    position: absolute;
+    left: 10px; }
+  .portfolio .hex {
+    background-color: transparent; }
+  .portfolio a {
     color: transparent; }
-  .LWorkList:hover {
+  .portfolio:hover {
     color: white; }
-    .LWorkList:hover a {
+    .portfolio:hover .linker {
+      right: 85px; }
+    .portfolio:hover .magnifier {
+      left: 75px; }
+    .portfolio:hover a {
       color: white; }
+    .portfolio:hover .hex {
+      background-color: rgba(0, 0, 0, 0.84); }
 
 .LWorkListContent {
   position: absolute;
@@ -178,7 +216,8 @@ a {
   border-bottom: 120px solid #e74c3c;
   border-top: 120px solid #e74c3c;
   border-right: 70px solid transparent;
-  position: absolute; }
+  position: absolute;
+  overflow: hidden; }
   .hex:before:hover {
     border-bottom: 30px solid white; }
 
@@ -186,19 +225,16 @@ a {
   width: 150px;
   height: 240px;
   transition: background-color 0.5s ease;
-  background-color: transparent;
   position: relative;
   border-right: 70px solid transparent;
   border-left: 70px solid transparent;
   z-index: 2; }
-  .hex:hover {
-    background-color: rgba(0, 0, 0, 0.9); }
 
 .hexagon {
   width: 290px;
   height: 240px;
   position: absolute;
-  z-index: 1; }
+  z-index: 2; }
 
 .hex:after {
   margin-left: 150px;
@@ -209,6 +245,156 @@ a {
   border-top: 120px solid #e74c3c;
   border-left: 70px solid transparent;
   position: absolute; }
+
+.shadowBinLeft {
+  position: absolute; }
+
+.shadowBinRight {
+  position: absolute;
+  left: 200px; }
+
+.shadowLeft {
+  overflow: hidden;
+  position: relative;
+  height: 240px;
+  width: 70px;
+  z-index: 6; }
+
+.shadowRight {
+  overflow: hidden;
+  position: relative;
+  height: 240px;
+  width: 70px;
+  margin-left: 20px;
+  z-index: 6; }
+
+.shadowRight:after {
+  content: " ";
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  background: url("../img/shadow-right.png") no-repeat;
+  background-size: 200px 200px;
+  transform: rotate(30deg);
+  top: 65%;
+  left: 8%;
+  z-index: 7; }
+
+.shadowLeft:before {
+  content: " ";
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  background: url("../img/shadow-left.png") no-repeat;
+  background-size: 200px 200px;
+  top: 64%;
+  left: -199%;
+  transform: rotate(-30deg);
+  z-index: 7; }
+
+.smallHexBox {
+  height: 40px;
+  width: 300px;
+  position: absolute;
+  top: 200px;
+  z-index: 5; }
+
+.smallHex {
+  width: 21px;
+  height: 36px;
+  position: absolute;
+  background-color: #e74c3c; }
+
+.smallHex:before {
+  width: 0;
+  height: 0;
+  content: " ";
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid transparent;
+  border-right: 10px solid #e74c3c;
+  color: white;
+  position: absolute;
+  z-index: 4;
+  left: -10px; }
+
+.smallHex:after {
+  width: 0;
+  height: 0;
+  content: " ";
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid transparent;
+  border-left: 10px solid #e74c3c;
+  color: red;
+  position: absolute;
+  z-index: 4;
+  right: -10px; }
+
+.linkIcon {
+  display: block;
+  position: absolute;
+  top: 7px; }
+  .linkIcon:before {
+    font-family: heydings_iconsregular;
+    position: absolute;
+    z-index: 9;
+    content: "a"; }
+
+.searchIcon {
+  display: block;
+  position: absolute;
+  top: 7px; }
+  .searchIcon:before {
+    font-family: heydings_iconsregular;
+    position: absolute;
+    z-index: 9;
+    content: "M"; }
+
+.meetTeam, .clientsSaid {
+  width: 28%;
+  margin-right: 5%; }
+  .meetTeam h5, .clientsSaid h5 {
+    margin-bottom: 0; }
+  .meetTeam h6, .clientsSaid h6 {
+    margin: 0; }
+  .meetTeam .flatShadow, .clientsSaid .flatShadow {
+    margin: 0 0 20px 40px; }
+  .meetTeam .circle, .clientsSaid .circle {
+    margin-left: 90px; }
+
+.clientsSaid {
+  width: 90%;
+  text-align: left;
+  color: white; }
+  .clientsSaid p {
+    font-style: italic;
+    font-weight: bold; }
+  .clientsSaid .circle {
+    float: left;
+    margin: 0 50px 50px;
+    background-color: #6c9fb8; }
+
+.socialShare {
+  width: 50%;
+  margin: 0 auto;
+  height: 100px;
+  padding-bottom: 50px;
+  text-align: center; }
+
+.sSh {
+  float: left;
+  list-style: none;
+  display: inline;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  margin-right: 10%;
+  border-radius: 50%;
+  color: #e74c3c; }
+  .sSh a {
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 90px; }
 
 .clearfix {
   content: ".";
