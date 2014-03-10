@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="164290ae-274f-4a8e-bd08-e43a2ed31150" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/.gitignore" afterPath="$PROJECT_DIR$/img/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Angle.iws" />
@@ -66,7 +64,7 @@
       <file leaf-file-name="main.sass" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/main.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="119" column="29" selection-start="2181" selection-end="2181" vertical-scroll-proportion="0.72121215" vertical-offset="1785" max-vertical-offset="7616">
+            <state line="119" column="29" selection-start="2181" selection-end="2181" vertical-scroll-proportion="1.2151515" vertical-offset="1622" max-vertical-offset="7616">
               <folding />
             </state>
           </provider>
@@ -363,7 +361,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/main.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="119" column="29" selection-start="2181" selection-end="2181" vertical-scroll-proportion="0.72121215" vertical-offset="1785" max-vertical-offset="7616">
+        <state line="119" column="29" selection-start="2181" selection-end="2181" vertical-scroll-proportion="1.2151515" vertical-offset="1622" max-vertical-offset="7616">
           <folding />
         </state>
       </provider>
