@@ -5,7 +5,6 @@
       var current, url;
       current = $(this);
       url = current.find("a").attr("href") + "/delete";
-      console.log(url);
       return $('<button type="button" class="btn btn-danger">Delete</button>').click(function() {
         return $.ajax(url).done(function() {
           return current.remove();
