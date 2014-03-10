@@ -1,0 +1,365 @@
+!!! 5
+-# paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+<!--[if lt IE 7]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if gt IE 8]><!-->
+%html.no-js{ :lang => "en" }
+  <!--<![endif]-->
+  %head
+    %meta{ :charset => "utf-8" }/
+
+    -# Always force latest IE rendering engine (even in intranet) & Chrome Frame
+    -# Remove this if you use the .htaccess
+    %meta{ "http-equiv" => "X-UA-Compatible", :content => "IE=edge,chrome=1" }/
+
+    %title Angle
+    %meta{ :name => "Description", :content => "Prov Min Hybrid" }/
+    %meta{ :name => "", :content => "" }/
+    %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1.0" }/
+    %link{ :href => "css/normalize.css", :media => "all", :rel => "stylesheet" }/
+    %link{ :href => "css/main.css", :media => "all", :rel => "stylesheet" }/
+    %link{ :href=> "http://fonts.googleapis.com/css?family=Gafata", :rel => "stylesheet"}/
+    %script{ :src => "js/vendor/modernizr-2.6.6.min.js" }
+    %script{ :src => "js/vendor/jquery-1.10.2.min.js" }
+    %script{ :src => "js/main.js" }
+
+  %body
+    %header
+      %nav#mainNav
+        #logo
+          %h2
+            %a(href="index.html" )ANGLE
+        %ul
+          %li
+            %a(href="index.html" ) HOME
+          %li
+            %a(href="#" )PAGES
+          %li
+            %a(href="#" )FEATURES
+          %li
+            %a(href="#" )SHOP
+          %li
+            %a(href="#" )BLOG
+          %li
+            %a(href="#" )PORTFOLIO
+          %li
+            %a(href="#" )CONTACT
+    #innerWrap
+      #introBin
+        #intro
+          %h1 Angle
+          %p flat design from another angle
+          %hr.trimHR
+      .decorBar
+        %svg.decor(width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg")
+          %path(stroke-width="0" d="M0 0 L100 100 L0 100" fill="white")
+      #featuresBin
+        .featureIntro
+          %h1 Features
+          %p Angle is a uniquely designed wordpress theme. It's super easy to modify and uses advanced CSS techniques </br> built on the latest Bootstrap Framework.
+          %hr
+        .featureList
+          .flatShadow
+          .circle.orangeCircle
+            %img(src="img/custom-icon-composer-600x600.png" )
+          %h5
+            %a(href="#" ) Visual composer
+          %p Pages can be built easily using WPBakery's super easy Visual Composer.
+
+        .featureList
+          .flatShadow
+          .circle.orangeCircle
+            %img(src="img/custom-icon-bag-600x600.png" )
+          %h5
+            %a(href="#" ) Woo Commerce Ready
+          %p Want to make a shop that stands out from the crowd, Angle works seamlessly with WooCommerce.
+
+        .featureList
+          .flatShadow
+          .circle.orangeCircle
+            %img(src="img/custom-icon-iphone-white-600x600.png" )
+          %h5
+            %a(href="#" ) Responsive Design
+          %p We have designed this site mobile first so it looks great on mobile devices of all shapes and sizes.
+
+        .featureList
+          .flatShadow
+          .circle.orangeCircle
+            %img(src="img/custom-icon-clipboard-600x600.png" )
+          %h5
+            %a(href="#" ) 100% Support
+          %p With Angle as with all our themes you will receive our 100% rock solid support.
+        .clearfix
+      .decorBar
+        %svg.decor(width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg")
+          %path(stroke-width="0" d="M0 0 L0 100 L100 0 " fill="white")
+      #LWorkBinHD
+        #LWorkBin
+          #LWorkIntro
+            %h1 Our Latest Work
+            %hr
+          %ul.LWorkNav
+            %li
+              %a(href="#" ) ALL
+
+            %li
+              %a(href="#" ) GALLERY
+
+            %li
+              %a(href="#" ) IMAGE
+
+            %li
+              %a(href="#" ) VIDEO
+
+          .LWorkListBin
+            .LWorkList
+              .portfolio
+                %img.hexagon(src="img/img-8-1200x600-600x518.png" )
+
+                .shadowBinLeft
+                  .shadowLeft
+                .shadowBinRight
+                  .shadowRight
+
+                .hex
+                  .LWorkListContent
+                    %h5
+                    %a(href="#" ) Integer sollicibulum
+                    %p After the avalanche, it took us a week to climb out.
+
+                .smallHexBox
+                  %a.smallHex.magnifier(href="#" )
+                    %i.searchIcon
+                  %a.smallHex.linker(href="#" )
+                    %i.linkIcon
+
+            .LWorkList
+              .portfolio
+                %img.hexagon(src="img/img-4-1200x600-600x518.png" )
+
+                .shadowBinLeft
+                  .shadowLeft
+                .shadowBinRight
+                  .shadowRight
+
+                .hex
+                  .LWorkListContent
+                    %h5
+                    %a(href="#" ) Integer sollicibulum
+                    %p After the avalanche, it took us a week to climb out.
+
+                .smallHexBox
+                  %a.smallHex.magnifier(href="#" )
+                    %i.searchIcon
+                  %a.smallHex.linker(href="#" )
+                    %i.linkIcon
+
+            .LWorkList
+              .portfolio
+                %img.hexagon(src="img/img-1-1200x600-600x518.png" )
+                .shadowBinLeft
+                  .shadowLeft
+                .shadowBinRight
+                  .shadowRight
+                .hex
+                  .LWorkListContent
+                    %h5
+                    %a(href="#" ) Integer sollicibulum
+                    %p After the avalanche, it took us a week to climb out.
+
+                .smallHexBox
+                  %a.smallHex.magnifier(href="#" )
+                    %i.searchIcon
+                  %a.smallHex.linker(href="#" )
+                    %i.linkIcon
+
+            .LWorkList
+              .portfolio
+                %img.hexagon(src="img/img-5-1200x600-600x518.png" )
+                .shadowBinLeft
+                  .shadowLeft
+                .shadowBinRight
+                  .shadowRight
+                .hex
+                  .LWorkListContent
+                    %h5
+                    %a(href="#" ) Integer sollicibulum
+                    %p After the avalanche, it took us a week to climb out.
+
+                .smallHexBox
+                  %a.smallHex.magnifier(href="#" )
+                    %i.searchIcon
+                  %a.smallHex.linker(href="#" )
+                    %i.linkIcon
+
+            .LWorkList
+              .portfolio
+                %img.hexagon(src="img/img-2-1200x600-600x518.png" )
+                .shadowBinLeft
+                  .shadowLeft
+                .shadowBinRight
+                  .shadowRight
+                .hex
+                  .LWorkListContent
+                    %h5
+                    %a(href="#" ) Integer sollicibulum
+                    %p After the avalanche, it took us a week to climb out.
+
+                .smallHexBox
+                  %a.smallHex.magnifier(href="#" )
+                    %i.searchIcon
+                  %a.smallHex.linker(href="#" )
+                    %i.linkIcon
+
+            .LWorkList
+              .portfolio
+                %img.hexagon(src="img/img-3-1200x600-600x518.png" )
+                .shadowBinLeft
+                  .shadowLeft
+                .shadowBinRight
+                  .shadowRight
+                .hex
+                  .LWorkListContent
+                    %h5
+                    %a(href="#" ) Integer sollicibulum
+                    %p After the avalanche, it took us a week to climb out.
+
+                .smallHexBox
+                  %a.smallHex.magnifier(href="#" )
+                    %i.searchIcon
+                  %a.smallHex.linker(href="#" )
+                    %i.linkIcon
+
+          .clearfix
+      .decorBar
+        %svg.decor(width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg")
+          %path(stroke-width="0" d="M0 0 L100 100 L0 100" fill="white")
+
+      #featuresBin
+        .featureIntro
+          %h1 Meet the team
+          %hr
+
+        .meetTeam
+          .flatShadow
+          .circle.orangeCircle
+            %img(src="img/custom-icon-bag-600x600.png" )
+          %h5
+            %a(href="#" ) John Langan
+          %h6 Art director
+          %p Your bones don’t break, mine do. That’s clear. Your cells react to bacteria and viruses differently than mine. You don’t get sick, I do. That’s also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke.
+
+        .meetTeam
+          .flatShadow
+          .circle.orangeCircle
+            %img(src="img/custom-icon-iphone-white-600x600.png" )
+          %h5
+            %a(href="#" ) Kate Ross
+          %h6 Creative director
+          %p Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke.
+
+        .meetTeam
+          .flatShadow
+          .circle.orangeCircle
+            %img(src="img/custom-icon-clipboard-600x600.png" )
+          %h5
+            %a(href="#" ) Manos Jones
+          %h6 IOS Developer
+          %p Your bones don’t break, mine do. That’s clear. Your cells react to bacteria and viruses differently than mine. You don’t get sick, I do. That’s also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke.
+        .clearfix
+      .decorBar
+        %svg.decor(width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg")
+          %path(stroke-width="0" d="M0 0 L0 100 L100 0 " fill="white")
+
+
+      #LWorkBinHD
+        #LWorkBin
+          #LWorkIntro
+            %h1 Clients said
+            %hr
+
+          .clientsSaid
+            .flatShadow
+            .circle.orangeCircle
+              %img(src="img/custom-icon-clipboard-600x600.png" )
+            %p Nullam vitae sollicitudin eros. Cras varius vehicula velit, ac congue quam dictum sed. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id ultricies ut vehicula ut id. Integer posuere erat a venenatis dapibus posuere velit aliquet duis mollis. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+            %h6 Sue Doe
+          .clearfix
+      .decorBar
+        %svg.decor(width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg")
+          %path(stroke-width="0" d="M0 0 L100 100 L0 100" fill="white")
+
+      #featuresBin
+        .featureIntro
+          %h1 Want to try more?
+          %p Angle is ultra flexible and customisable. You can create unlimited variations of elements and colour combinations. Have a look at some of the things you can do
+          %hr
+        .featureList
+          .flatShadow
+          .circle.orangeCircle
+            %img(src="img/custom-icon-composer-600x600.png" )
+          %h5
+            %a(href="#" ) Visual composer
+          %p Pages can be built easily using WPBakery's super easy Visual Composer.
+
+        .featureList
+          .flatShadow
+          .circle.orangeCircle
+            %img(src="img/custom-icon-bag-600x600.png" )
+          %h5
+            %a(href="#" ) Woo Commerce Ready
+          %p Want to make a shop that stands out from the crowd, Angle works seamlessly with WooCommerce.
+
+        .featureList
+          .flatShadow
+          .circle.orangeCircle
+            %img(src="img/custom-icon-iphone-white-600x600.png" )
+          %h5
+            %a(href="#" ) Responsive Design
+          %p We have designed this site mobile first so it looks great on mobile devices of all shapes and sizes.
+
+        .featureList
+          .flatShadow
+          .circle.orangeCircle
+            %img(src="img/custom-icon-clipboard-600x600.png" )
+          %h5
+            %a(href="#" ) 100% Support
+          %p With Angle as with all our themes you will receive our 100% rock solid support.
+        .clearfix
+      .decorBar
+        %svg.decor(width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg")
+          %path(stroke-width="0" d="M0 0 L50 100 L100 0 " fill="white")
+
+
+      #LWorkBinHD(style="margin-bottom:0" )
+
+
+        .socialShare
+          %ul
+            %li.sSh
+              %a(href="#" ) F
+
+            %li.sSh
+              %a(href="#" ) T
+
+            %li.sSh
+              %a(href="#" ) G+
+        .clearfix
+    -#
+      Javascript at the bottom for fast page loading
+      Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary
+    %script{ :src => "//ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.js" }
+    :javascript
+      window.jQuery || document.write("<script src='js/jquery.min.js'>\x3C/script>")
+
+    %script{ :src => "js/plugins.js?v=1" }
+    %script{ :src => "js/script.js?v=1" }
+
+    -#  asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet
+    -#  change the UA-XXXXX-X to be your site's ID
+    :javascript
+      var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"],["_trackPageLoadTime"]];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+      g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+      s.parentNode.insertBefore(g,s)}(document,"script"));

@@ -1,0 +1,442 @@
+
+@font-face
+  font-family: 'heydings_iconsregular'
+  src: url('fonts/heydings_icons-webfont.eot')
+  src: url('fonts/heydings_icons-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/heydings_icons-webfont.woff') format('woff'), url('fonts/heydings_icons-webfont.ttf') format('truetype'), url('fonts/heydings_icons-webfont.svg#heydings_iconsregular') format('svg')
+  font-weight: normal
+  font-style: normal
+
+.backcolor
+  background-color: rgb(231,76,60)
+
+$styleColor: rgb(231,76,60)
+
+body
+  font-family: calibri, "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-size: 1.1em
+
+a
+  color: #ffffff
+  text-decoration: none
+
+
+#mainNav
+  position: fixed
+  z-index: 100
+  left: 0
+  right: 0
+  height: 80px
+  background-color: rgb(231,76,60)
+  padding: 10px 100px
+  line-height: 50px
+  #logo
+    margin-top: -10px
+    width: 200px
+    text-align: center
+    background: url("../img/logo.png") no-repeat
+    background-size: 60px
+    float: left
+    font-weight: bold
+    color: #ffffff
+  ul
+    float: right
+    li
+      float: left
+      margin-right: 30px
+      font-weight: bold
+      color: #ffffff
+
+      a
+        line-height: 40px
+        display: block
+        height: 40px
+        &:hover
+          border-bottom: 2px solid #ffffff
+        &:visited
+          border-bottom: 2px solid #ffffff
+
+#introBin
+  height: 200px
+  background-color: rgb(231,76,60)
+  padding-top: 100px
+
+#intro
+  height: 170px
+  margin: 0 auto
+  text-align: center
+  color: #ffffff
+  font-family: Basic Title font, sans-serif
+  hr
+
+    border: 1px solid #ffffff
+  p
+    margin: 0
+
+  h1
+
+    margin: 0
+    font-size: 100px
+
+
+.decorBar
+  width: 100%
+  height: 100px
+
+.decor
+  background-color: rgb(231,76,60)
+
+.trimHR
+  width: 150px
+  margin: 20px auto
+
+//---- feature list section controls ---//
+
+
+#featuresBin
+  width: 90%
+  margin: 0 auto
+
+.featureIntro
+  width: 800px
+  margin: 0 auto 50px
+  text-align: center
+
+  hr
+    @extend .trimHR
+    border: 1px solid rgb(231,76,60)
+  h1
+    font-family: Basic Title font, sans-serif
+
+.featureList
+
+  position: relative
+  float: left
+  text-align: center
+  width: 250px
+  margin-right: 50px
+  font-weight: lighter
+
+  img
+    transition: all 0.5s ease
+    position: absolute
+    left: -1px
+    top: 0
+    width: 150px
+  a
+    color: rgb(231,76,60)
+.circle
+  position: relative
+
+  &:hover
+    img
+      top: -40px
+  margin-left: 50px
+  width: 150px
+  height: 150px
+  border-radius: 50%
+  background-color: rgb(231,76,60)
+
+.flatShadow
+  width: 198px
+  height: 198px
+  background: url("../img/flat-shadow.png") no-repeat scroll 0 0 / 100% rgba(0,0,0,0)
+  position: absolute
+  left: 26px
+  top: 70px
+  z-index: -1
+
+//---Latest Work Bin Styles --//
+
+#LWorkBinHD
+  background-color: rgb(231,76,60)
+  padding-top: 50px
+
+#LWorkBin
+  width: 90%
+  margin: 0 auto
+
+#LWorkIntro
+  color: #ffffff
+  hr
+    border: 1px solid #ffffff
+  @extend .featureIntro
+
+.LWorkNav
+  text-align: center
+  height: 30px
+  font-weight: bold
+  width: 360px
+  margin: 0 auto 20px
+  clear: both
+
+  li
+    float: left
+    list-style: none
+    margin-right: 40px
+#LWorkListBin
+  width: 90%
+  margin: 0 auto
+
+
+.LWorkList
+  overflow: visible
+  margin: 0 auto
+  background: url("../img/flat-shadow.png") no-repeat scroll 0 120px
+  background-size: 380px 180px
+  width: 400px
+  height: 300px
+  float: left
+
+
+
+.portfolio
+  width: 240px
+  margin-left: 45px
+  position: relative
+  color: transparent
+  transition: all 0.5s ease
+  .linker
+    transition: all 0.5s ease
+    position: absolute
+    right: 20px
+  .magnifier
+    transition: all 0.5s ease
+    position: absolute
+    left: 10px
+  .hex
+    background-color: transparent
+  a
+    color: transparent
+  &:hover
+    color: #ffffff
+    .linker
+      right: 85px
+    .magnifier
+      left: 75px
+    a
+      color: white
+    .hex
+      background-color: rgba(0, 0, 0, 0.84)
+
+.LWorkListContent
+  position: absolute
+  z-index: 3
+  height: 150px
+  width: 200px
+  margin: 50px 0 50px -30px
+  padding-top: 20px
+  text-align: center
+
+  h5
+    margin: 0
+  p
+    font-size: 0.9em
+//-- hexagon ---//
+
+.hex:before
+  margin-left: -70px
+  content: " "
+  width: 0
+  height: 0
+  border-bottom: 120px solid $styleColor
+  border-top: 120px solid $styleColor
+  border-right: 70px solid transparent
+  position: absolute
+  overflow: hidden
+  &:hover
+    border-bottom: 30px solid #ffffff
+
+
+.hex
+
+  width: 150px
+  height: 240px
+  transition: background-color 0.5s ease
+  //background-color: transparent
+  position: relative
+  border-right: 70px solid transparent
+  border-left: 70px solid transparent
+  z-index: 2
+  //&:hover
+    background-color: rgba(0,0,0,0.9)
+
+
+
+.hexagon
+  width: 290px
+  height: 240px
+  position: absolute
+  z-index: 2
+
+.hex:after
+  margin-left: 150px
+  content: " "
+  width: 0
+  height: 0
+  border-bottom: 120px solid $styleColor
+  border-top: 120px solid $styleColor
+  border-left: 70px solid transparent
+  position: absolute
+
+.shadowBinLeft
+  position: absolute
+
+.shadowBinRight
+  position: absolute
+  left: 200px
+.shadowLeft
+  overflow: hidden
+  position: relative
+  height: 240px
+  width: 70px
+  //background-color: blue
+  z-index: 6
+
+.shadowRight
+  overflow: hidden
+  position: relative
+  height: 240px
+  width: 70px
+  //background-color: blue
+  margin-left: 20px
+  z-index: 6
+
+.shadowRight:after
+  content: " "
+  width: 200px
+  height: 200px
+  position: absolute
+  background: url("../img/shadow-right.png") no-repeat
+  background-size: 200px 200px
+  transform: rotate(30deg)
+  top: 65%
+  left: 8%
+  z-index: 7
+
+.shadowLeft:before
+  content: " "
+  width: 200px
+  height: 200px
+  position: absolute
+  background: url("../img/shadow-left.png") no-repeat
+  background-size: 200px 200px
+  top: 64%
+  left: -199%
+  transform: rotate(-30deg)
+  z-index: 7
+
+.smallHexBox
+  height: 40px
+  width: 300px
+  position: absolute
+  top: 200px
+
+  z-index: 5
+
+
+.smallHex
+  width: 21px
+  height: 36px
+  position: absolute
+  background-color: $styleColor
+
+
+
+.smallHex:before
+  width: 0
+  height: 0
+  content: " "
+  border-top: 18px solid transparent
+  border-bottom: 18px solid transparent
+  border-right: 10px solid $styleColor
+  color: #ffffff
+  position: absolute
+  z-index: 4
+  left: -10px
+
+.smallHex:after
+  width: 0
+  height: 0
+  content: " "
+  border-top: 18px solid transparent
+  border-bottom: 18px solid transparent
+  border-left: 10px solid $styleColor
+  color: red
+  position: absolute
+  z-index: 4
+  right: -10px
+
+.linkIcon
+  display: block
+  position: absolute
+  top: 7px
+  &:before
+    font-family: heydings_iconsregular
+    position: absolute
+    z-index: 9
+    content: "a"
+
+.searchIcon
+  display: block
+  position:  absolute
+  top: 7px
+  &:before
+    font-family: heydings_iconsregular
+    position: absolute
+    z-index: 9
+    content: "M"
+
+.meetTeam
+  width: 28%
+  margin-right: 5%
+  h5
+    margin-bottom: 0
+  h6
+    margin: 0
+  .flatShadow
+    margin: 0 0 20px 40px
+  .circle
+    margin-left: 90px
+  @extend .featureList
+
+.clientsSaid
+  width: 90%
+  text-align: left
+  color: #ffffff
+  p
+    font-style: italic
+    font-weight: bold
+  .circle
+    float: left
+    margin: 0 50px 50px
+    background-color: rgb(108,159,184)
+  @extend .meetTeam
+
+.socialShare
+  width: 50%
+  margin: 0 auto
+  height: 100px
+  padding-bottom: 50px
+  text-align: center
+
+.sSh
+  float: left
+  list-style: none
+  display: inline
+  width: 100px
+  height: 100px
+  background-color: #ffffff
+  margin-right: 10%
+  border-radius: 50%
+  color: $styleColor
+  a
+    color: $styleColor
+    font-weight: bold
+    font-size: 50px
+    line-height: 90px
+
+
+.clearfix
+  content: "."
+  visibility: hidden
+  clear: both
