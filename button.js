@@ -2,14 +2,14 @@
 (function() {
   jQuery(function() {
     return $('#books tbody tr').each(function() {
-      var current, url;
-      current = $(this);
-      url = current.find("a").attr("href") + "/delete";
+      var currentRow, url;
+      currentRow = $(this);
+      url = currentRow.find('a:contains("view")').attr("href") + "/delete";
       return $('<button type="button" class="btn btn-danger">Delete</button>').click(function() {
         return $.ajax(url).done(function() {
-          return current.remove();
+          return currentRow.remove();
         });
-      }).appendTo(current.find("td:last-child"));
+      }).appendTo(currentRow.find("td:last-child"));
     });
   });
 
